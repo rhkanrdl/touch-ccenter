@@ -1,0 +1,1804 @@
+@charset "UTF-8";
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("../font/S-CoreDream-4Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("../font/S-CoreDream-5Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("../font/S-CoreDream-6Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("../font/S-CoreDream-8Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream";
+  src: url("../font/S-CoreDream-9Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+div#content.sub01 div.sub-head {
+  background: #74C8FF;
+}
+div#content.sub01 div.sub-head.fix {
+  background: rgba(116, 200, 255, 0.8);
+}
+
+div#content.sub02 div.sub-head {
+  background: #91DCD2;
+}
+div#content.sub02 div.sub-head.fix {
+  background: rgba(145, 220, 210, 0.8);
+}
+
+div#content.sub03 div.sub-head {
+  background: #88C46F;
+}
+div#content.sub03 div.sub-head.fix {
+  background: rgba(136, 196, 111, 0.8);
+}
+
+div#content.sub04 div.sub-head {
+  background: #FFCE48;
+}
+div#content.sub04 div.sub-head.fix {
+  background: rgba(255, 206, 72, 0.8);
+}
+
+div#content.sub05 div.sub-head {
+  background: #8FABE3;
+}
+div#content.sub05 div.sub-head.fix {
+  background: rgba(143, 171, 227, 0.8);
+}
+
+/* basic */
+.pagenation {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+  margin: 50px 0 60px;
+  padding: 0 !important;
+  width: 100%;
+}
+.pagenation a {
+  background: white;
+}
+.pagenation a,
+.pagenation strong {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  color: #999999;
+  border: 1px solid #999;
+  width: 24px;
+  line-height: 22px;
+  margin: 0 2px;
+}
+@media (min-width: 1200px) {
+  .pagenation a,
+.pagenation strong {
+    width: 32px;
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+.pagenation a.jump, .pagenation a.move,
+.pagenation strong.jump,
+.pagenation strong.move {
+  font-size: 0;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.pagenation a.jump i, .pagenation a.move i,
+.pagenation strong.jump i,
+.pagenation strong.move i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #a5a5a5;
+  font-size: 18px;
+  transform: translateY(-50%) translateX(-50%);
+}
+.pagenation .active,
+.pagenation strong {
+  color: #fff;
+  background: #2C4988;
+  border-color: #2C4988;
+  font-weight: normal;
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  font-family: sans-serif;
+}
+input[type=password]::-moz-placeholder {
+  font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+}
+input[type=password]:-ms-input-placeholder {
+  font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+}
+input[type=password]::placeholder {
+  font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+}
+input[type=password]::-ms-reveal {
+  display: none;
+}
+
+.sr-only {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* default input */
+input,
+select,
+textarea {
+  border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /*
+         @media all and (max-width: 1199px) {
+             appearance: none;
+             -moz-appearance: none;
+             -ms-appearance: none;
+             -webkit-appearance: none;
+
+             &::-ms-expand {
+                 display: none;
+             }
+         }
+     */
+}
+input::-ms-clear,
+select::-ms-clear,
+textarea::-ms-clear {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #404040;
+  -webkit-tap-highlight-color: transparent;
+}
+a:focus {
+  outline: none;
+}
+
+button {
+  outline: none;
+  border-radius: 0;
+}
+
+/* Modal */
+article.layer-pop {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+article.layer-pop.on {
+  display: block;
+}
+article.layer-pop div.card div.layer-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -335px 0 0 -417px;
+  padding: 40px 0 0;
+  background: #fff;
+  width: 834px;
+  height: 670px;
+  border-radius: 24px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+article.layer-pop div.card div.layer-outline h2 {
+  font-size: 54px;
+  font-weight: 600;
+  color: #786443;
+}
+article.layer-pop div.card div.layer-outline h2::before {
+  display: block;
+  width: 147px;
+  height: 210px;
+  margin: 0 auto 30px;
+  background: url(../images/icon-card.svg) no-repeat center/100% auto;
+  content: "";
+}
+article.layer-pop div.card div.layer-outline h2 span {
+  display: block;
+}
+article.layer-pop div.card div.layer-outline h2 small {
+  display: block;
+  font-size: 34px;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0 0;
+}
+article.layer-pop div.notice div.layer-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -450px 0 0 -417px;
+  padding: 80px 0 0;
+  background: #fff;
+  width: 834px;
+  height: 900px;
+  border-radius: 24px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+article.layer-pop div.notice div.layer-outline > i {
+  font-size: 220px;
+  color: #786443;
+  opacity: 0.5;
+}
+article.layer-pop div.notice div.layer-outline h2 {
+  font-size: 54px;
+  font-weight: 600;
+  color: #786443;
+}
+article.layer-pop div.notice div.layer-outline h2 span {
+  display: block;
+}
+article.layer-pop div.notice div.layer-outline h2 small {
+  display: block;
+  font-size: 34px;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0 0;
+}
+
+/* basic */
+* {
+  transition: all 0.3s linear;
+}
+
+html {
+  min-width: 320px;
+  max-width: 100%;
+  font-size: 14px;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */ /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge*/
+  user-select: none;
+}
+
+body .container {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  vertical-align: top;
+  padding: 0;
+}
+body div.outline {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+  min-width: 1080px;
+  max-width: 1080px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #444;
+  /* header */
+}
+body div.outline header {
+  padding: 0 45px;
+}
+body div.outline header .container {
+  position: relative;
+  line-height: 117px;
+  margin-top: 30px;
+  padding: 0 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 127px;
+  box-shadow: 0 70px 70px 0 rgba(0, 0, 0, 0.6);
+}
+body div.outline header .container h1 {
+  margin: 0;
+}
+body div.outline header .container h1 a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  font-size: 46px;
+}
+body div.outline header .container a.admin {
+  display: block;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+  width: 298px;
+  height: 42.2px;
+  font-size: 0;
+  background: url(../images/logo.svg) no-repeat center top/100% auto;
+}
+body div.outline div#content {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  /* MAIN */
+}
+body div.outline div#content.main h2 {
+  display: none;
+}
+body div.outline div#content.main section.main-buttons div.container {
+  text-align: center;
+}
+body div.outline div#content.main section.main-buttons div.container div.info-text {
+  margin: 460px 0 100px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+body div.outline div#content.main section.main-buttons div.container div.info-text p {
+  margin: 0 0 6px;
+}
+body div.outline div#content.main section.main-buttons div.container div.info-text p strong {
+  font-weight: 700;
+  color: #FCB034;
+}
+body div.outline div#content.main section.main-buttons div.container > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 100px;
+  font-size: 0;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li > a {
+  display: block;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  padding: 30px 0;
+  margin: 2px;
+  height: 266px;
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+}
+body div.outline div#content.main section.main-buttons div.container > ul li > a:active {
+  color: #fff;
+  box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
+  transition: all 0s linear;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li > a i {
+  display: block;
+  font-size: 100px;
+  margin: 0 0 10px;
+  opacity: 0.5;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
+  display: block;
+  font-weight: 600;
+  font-size: 40px;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li.num a {
+  background: #519127;
+  border-radius: 30px 0 0 30px;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
+  background: #36720E;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
+  background: #277291;
+  border-radius: 0 30px 30px 0;
+}
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
+  background: #145570;
+}
+body div.outline div#content article.float-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 186px;
+  text-align: left;
+  background: #303030;
+  font-size: 0;
+}
+body div.outline div#content article.float-bar a.home {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  width: 162px;
+  font-weight: 600;
+  background: #333;
+  line-height: 186px;
+  text-align: center;
+}
+body div.outline div#content article.float-bar a.home:active {
+  background: #000;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content article.float-bar a.home i {
+  position: relative;
+  top: 30px;
+  color: #fff;
+  font-size: 76px;
+  margin: 0;
+}
+body div.outline div#content article.float-bar button.main-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 162px);
+  font-size: 50px;
+  height: 186px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #F1592A;
+  color: #fff;
+  font-weight: 600;
+}
+body div.outline div#content article.float-bar button.main-btn:active {
+  background: #B34422;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content article.keypad {
+  background: #15151F;
+  color: #fff;
+  font-size: 0;
+  padding: 20px 190px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+body div.outline div#content article.keypad p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+body div.outline div#content article.keypad p button {
+  border: none;
+  border-radius: 36px;
+  margin: 10px;
+  padding: 0;
+  height: 120px;
+  width: 120px;
+  font-size: 60px;
+  font-weight: 600;
+  background: #555;
+}
+body div.outline div#content article.keypad p button:active {
+  background: #504F57;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content article.keypad p button.del {
+  background: #8B4242;
+  width: 330px;
+  font-size: 40px;
+}
+body div.outline div#content article.keypad p button.back {
+  background: #4B4759;
+  width: 330px;
+  font-size: 0;
+}
+body div.outline div#content article.keypad p button.back i {
+  font-size: 80px;
+}
+body div.outline div#content article.messages {
+  padding: 0 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+body div.outline div#content article.messages i {
+  font-size: 300px;
+  color: #15151F;
+  margin: 0 0 60px;
+}
+body div.outline div#content article.messages p {
+  margin: 0 0 10px;
+  font-size: 40px;
+  color: #CECECE;
+}
+body div.outline div#content article.messages.alert {
+  background: #060610;
+  border-radius: 0;
+  padding: 30px 0;
+}
+body div.outline div#content article.messages.alert h3 {
+  display: block;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 600;
+  color: #85828F;
+}
+body div.outline div#content article.messages.alert p {
+  display: none;
+}
+body div.outline div#content article.messages.alert.on h3 {
+  display: none;
+}
+body div.outline div#content article.messages.alert.on p {
+  display: block;
+  margin: 0;
+  font-size: 35px;
+  color: #FCB134;
+}
+body div.outline div#content article.program {
+  padding: 30px 45px 30px 220px;
+  position: relative;
+}
+body div.outline div#content article.program h3 {
+  margin: 0;
+  font-size: 40px;
+  word-break: keep-all;
+  font-weight: 600;
+  color: #fff;
+}
+body div.outline div#content article.program h3 small {
+  font-weight: 400;
+  display: block;
+  font-size: 26px;
+  padding: 10px 0 0;
+  color: #FCB134;
+}
+body div.outline div#content article.program p.image {
+  position: absolute;
+  left: 45px;
+  top: 30px;
+  margin: 0;
+  width: 143px;
+  height: 202px;
+}
+body div.outline div#content article.program p.image img {
+  width: 100%;
+  height: 100%;
+}
+body div.outline div#content article.program ul.info {
+  display: inline-block;
+  list-style: none;
+  margin: 40px 0 30px;
+  padding: 0;
+  width: 456px;
+  vertical-align: top;
+}
+body div.outline div#content article.program ul.info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 26px;
+  color: #C7C7C7;
+}
+body div.outline div#content article.program ul.info li strong {
+  font-weight: 400;
+}
+body div.outline div#content article.program p.price {
+  display: inline-block;
+  vertical-align: top;
+  margin: 60px 0 0;
+  text-align: right;
+  font-size: 34px;
+  color: #FED432;
+  font-weight: 600;
+  width: 354px;
+}
+body div.outline div#content article.seatmap {
+  background: #15151F;
+  position: relative;
+  padding: 10px 0 60px;
+}
+body div.outline div#content article.seatmap h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 30px 0 0;
+  color: #fff;
+}
+body div.outline div#content article.seatmap div.legend {
+  position: absolute;
+  right: 45px;
+  top: 60px;
+}
+body div.outline div#content article.seatmap div.legend span {
+  display: inline-block;
+  font-size: 26px;
+  color: #C7C7C7;
+  line-height: 1;
+}
+body div.outline div#content article.seatmap div.legend span::before {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background: #F1592A;
+}
+body div.outline div#content article.seatmap.hall01 div.map-outline {
+  width: 768px;
+}
+body div.outline div#content article.seatmap.hall02 div.map-outline {
+  width: 452px;
+}
+body div.outline div#content article.seatmap.hall03 div.map-outline {
+  width: 398px;
+}
+body div.outline div#content article.seatmap div.map-outline {
+  text-align: center;
+  margin: 0 auto;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
+  font-size: 12px;
+  display: inline-block;
+  background: #85828F;
+  border: 1px solid #15151F;
+  width: 22px;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  text-align: center;
+  color: #555555;
+  border-radius: 3px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.active {
+  background: #F1592A;
+  color: #fff;
+  border-color: #423B84;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.h_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.l_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.m_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.seat-line {
+  background: transparent;
+  border-color: transparent;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.h_blank {
+  width: 11px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.m_blank {
+  color: #82958F;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 32px;
+  height: 32px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.s_a, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.s_c {
+  width: 220px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.s_b {
+  width: 264px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.ss_a {
+  width: 198px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.ss_b {
+  width: 110px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.s_blank.ss_c {
+  width: 88px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel2 {
+  width: 44px;
+}
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel3 {
+  width: 66px;
+}
+body div.outline div#content article.ticket-print button {
+  display: block;
+  margin: 60px auto 0;
+  height: 144px;
+  border-radius: 36px;
+  width: 650px;
+  border: none;
+  background: #F1592A;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+body div.outline div#content article.ticket-print button:active {
+  background: #CB4921;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content article.ticket-print button.check {
+  background: #23222B;
+  color: #484751;
+}
+body div.outline div#content article.ticket-select {
+  padding: 20px 60px 0;
+  font-size: 0;
+  text-align: center;
+}
+body div.outline div#content article.ticket-select strong {
+  display: block;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 10px 20px;
+}
+body div.outline div#content article.ticket-select div.box {
+  padding-top: 20px;
+  max-height: 326px;
+  overflow-y: scroll;
+}
+body div.outline div#content article.ticket-select div.box input {
+  display: none;
+}
+body div.outline div#content article.ticket-select div.box label {
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 60px;
+  padding: 0 30px 0 70px;
+  border-radius: 20px;
+  margin: 0 8px 22px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(255, 255, 255, .2);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat left 16px center/40px auto;
+}
+body div.outline div#content article.ticket-select div.box label.printed {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body div.outline div#content article.ticket-select div.box label.printed::before {
+  content: "재출력";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -17px;
+  color: #000;
+  background: #fff;
+  line-height: 36px;
+  font-size: 20px;
+  padding: 0 14px;
+  border-radius: 36px;
+}
+body div.outline div#content article.ticket-select div.box input:checked + label {
+  border-color: #FCB834;
+  color: #FCB834;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(252, 184, 52, 1);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat rgba(0, 0, 0, 0.3) left 16px center/40px auto;
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+}
+body div.outline div#content article.ticket-select div.box input:checked + label::before {
+  background: #FCB834;
+}
+body div.outline div#content article.ticket-info {
+  padding: 20px 0 0;
+}
+body div.outline div#content article.ticket-info ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+body div.outline div#content article.ticket-info ul li {
+  font-size: 26px;
+  color: #fff;
+  line-height: 1.6;
+}
+body div.outline div#content.sub h2 {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 600;
+  margin: 130px 0;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+body div.outline div#content.sub h2 small {
+  display: block;
+  margin: 10px;
+  font-size: 38px;
+  color: #fff;
+}
+body div.outline div#content.sub section.sub-numcheck div.container {
+  padding: 0;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset legend {
+  display: none;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label {
+  display: none;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for=number] {
+  display: block;
+  font-size: 0;
+  position: relative;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for=number]::after {
+  content: "T";
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: 260px;
+  top: 18px;
+  font-size: 50px;
+  color: #999;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type=text] {
+  display: block;
+  position: relative;
+  height: 110px;
+  border: 1px solid #645F64;
+  border-radius: 36px;
+  width: 650px;
+  margin: 0 auto 20px;
+  padding: 0 70px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  outline: none;
+  background: #15151F;
+  color: #fff;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  color: #CECECE;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
+  background: transparent;
+  color: transparent;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 40px;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message.on {
+  background: #000;
+  color: #FCB134;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit {
+  display: block;
+  margin: 60px auto 0;
+  height: 144px;
+  border-radius: 36px;
+  width: 650px;
+  border: none;
+  background: #F1592A;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit:active {
+  background: #CB4921;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content.sub section.sub-list div.container p.ticket-text {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: #FCB834;
+  line-height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+}
+body div.outline div#content.sub section.sub-list div.container ul.list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 1228px;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list::after {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: 10000;
+  left: -100px;
+  right: -100px;
+  bottom: 185px;
+  height: 120px;
+  box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 45px 15px;
+  font-size: 0;
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
+  margin-top: 50px;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
+  font-size: 42px;
+  margin: 0 0 0;
+  font-weight: 600;
+  padding: 0;
+  color: #222;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
+  display: block;
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
+  display: inline-block;
+  font-size: 30px;
+  color: #333;
+  margin: 6px 20px 0 0;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
+  font-size: 34px;
+  color: #0077A8;
+  margin: 0;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
+  display: block;
+  font-size: 30px;
+  color: #333;
+  margin: 6px 0 0;
+  padding: 0 240px 0 0;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+  background: #519127;
+  border-radius: 12px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  width: 234px;
+  line-height: 82px;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li.used {
+  background: #C1C1C1;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a h3 {
+  color: #777;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.count,
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.seat,
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.name,
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.num {
+  color: #777;
+}
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.label {
+  background: #959595;
+  color: #C1C1C1;
+}
+body div.outline div#content.sub section.sub-seat div.container {
+  padding-top: 30px;
+}
+body div.outline div#content.sub section.sub-seat div.container h2 {
+  display: none;
+}
+body div.outline div#content.sub section.sub-printing div.container {
+  text-align: center;
+}
+body div.outline div#content.sub section.sub-printing div.container i {
+  font-size: 280px;
+  color: #fff;
+  margin: 180px 0 30px;
+}
+body div.outline div#content.sub section.sub-printing div.container h2 {
+  font-size: 72px;
+  margin: 60px 0 0;
+}
+body div.outline div#content.sub section.sub-printing div.container h2 small {
+  display: block;
+  color: #fff;
+  margin-top: 10px;
+}
+body div.outline div#content.sub section.sub-result div.container {
+  text-align: center;
+}
+body div.outline div#content.sub section.sub-result div.container h2 {
+  font-size: 72px;
+  margin: 512px 0 30px;
+}
+body div.outline div#content.sub section.sub-result div.container h2::before {
+  display: block;
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  margin-left: -194px;
+  content: "";
+  width: 388px;
+  height: 138px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='387.724' height='137.341' viewBox='0 0 387.724 137.341'%3E%3Cg transform='translate(-239.809 -97.57)'%3E%3Cpath d='M252.656,135.889s72.707,51.741,203.556,1.618C566.056,95.439,596.289,97.589,596.289,97.589l22.026,39.919,9.217,36.682s-69.449,3.765-163.261,32.372C313.879,252.417,239.809,174.19,239.809,174.19Z' transform='translate(0 0)' fill='%23fca500'/%3E%3Cpath d='M245.727,125.9s72.291,45.314,190.2,6.471c0,0-91.437,20.233-173.067-34.794Z' transform='translate(10.206 0.01)' fill='%23ffd000'/%3E%3Cpath d='M252.637,176.848l-12.828-45.611s41.575,38.028,124.713,45.611Z' transform='translate(0 58.063)' fill='%23e33c0b'/%3E%3Cpath d='M297.04,177.536s35.663-4.964,84.652-21.882C444.174,134.08,525.8,130.838,525.8,130.838l-16.127,46.7Z' transform='translate(98.704 57.375)' fill='%23e33c0b'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+body div.outline div#content.sub section.sub-result div.container h2 small {
+  display: block;
+  color: #fff;
+  margin-top: 10px;
+}
+body div.outline div#content.sub section.sub-result div.container p {
+  font-size: 40px;
+  color: #CECECE;
+}
+body div.outline div#content.sub section.sub-result.error div.container h2 {
+  color: #F1592A;
+}
+body div.outline div#content.sub section.sub-result.error div.container h2::before {
+  display: none;
+}
+body div.outline div#content.sub section.sub-admin-login div.container {
+  padding: 0;
+  text-align: center;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset {
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset legend {
+  display: none;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset label {
+  display: none;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset input[type=password] {
+  display: block;
+  height: 110px;
+  border: 1px solid #645F64;
+  border-radius: 36px;
+  width: 650px;
+  margin: 0 auto 160px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  outline: none;
+  background: #15151F;
+  color: #fff;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit {
+  display: inline-block;
+  margin: 60px 20px 0 0;
+  height: 144px;
+  border-radius: 36px;
+  width: 430px;
+  border: none;
+  background: #F1592A;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit:active {
+  background: #CB4921;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle {
+  display: inline-block;
+  margin: 60px 0 0;
+  height: 144px;
+  border-radius: 36px;
+  width: 215px;
+  border: none;
+  background: #18183B;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle:active {
+  background: #0D0D26;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content.sub section.sub-admin-main div.container {
+  text-align: center;
+  padding: 0 45px;
+}
+body div.outline div#content.sub section.sub-admin-main div.container h2 {
+  font-size: 0;
+  margin: 562px 0 30px;
+}
+body div.outline div#content.sub section.sub-admin-main div.container h2::before {
+  display: block;
+  position: absolute;
+  top: 370px;
+  left: 50%;
+  margin-left: -194px;
+  content: "";
+  width: 388px;
+  height: 138px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='387.724' height='137.341' viewBox='0 0 387.724 137.341'%3E%3Cg transform='translate(-239.809 -97.57)'%3E%3Cpath d='M252.656,135.889s72.707,51.741,203.556,1.618C566.056,95.439,596.289,97.589,596.289,97.589l22.026,39.919,9.217,36.682s-69.449,3.765-163.261,32.372C313.879,252.417,239.809,174.19,239.809,174.19Z' transform='translate(0 0)' fill='%23fca500'/%3E%3Cpath d='M245.727,125.9s72.291,45.314,190.2,6.471c0,0-91.437,20.233-173.067-34.794Z' transform='translate(10.206 0.01)' fill='%23ffd000'/%3E%3Cpath d='M252.637,176.848l-12.828-45.611s41.575,38.028,124.713,45.611Z' transform='translate(0 58.063)' fill='%23e33c0b'/%3E%3Cpath d='M297.04,177.536s35.663-4.964,84.652-21.882C444.174,134.08,525.8,130.838,525.8,130.838l-16.127,46.7Z' transform='translate(98.704 57.375)' fill='%23e33c0b'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li {
+  display: inline-block;
+  width: 25%;
+  padding: 1px;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li a {
+  display: block;
+  padding: 30px 0;
+  color: #fff;
+  background: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li a:hover, body div.outline div#content.sub section.sub-admin-main div.container ul li a.active {
+  background: #323232;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li a i {
+  display: block;
+  font-size: 60px;
+  margin: 0 0 20px;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li:first-child a {
+  border-radius: 36px 0 0 36px;
+}
+body div.outline div#content.sub section.sub-admin-main div.container ul li:last-child a {
+  border-radius: 0 36px 36px 0;
+}
+body div.outline div#content.sub section.sub-admin-main.error div.container h2 {
+  color: #F1592A;
+}
+body div.outline div#content.sub section.sub-admin-main.error div.container h2::before {
+  display: none;
+}
+body div.outline div#content.sub section.sub-admin div.container {
+  text-align: center;
+  padding: 0 45px;
+}
+body div.outline div#content.sub section.sub-admin div.container h2 {
+  display: none;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area {
+  min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 0 0;
+  font-size: 22px;
+  line-height: 70px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
+  padding-left: 50px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 70px;
+  text-decoration: none;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
+  height: 70px;
+  font-size: 22px;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  width: 180px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
+  width: 260px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
+  height: 70px;
+  width: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #0077A8;
+  font-size: 0;
+}
+body div.outline div#content.sub section.sub-admin div.container div.tool-area button i {
+  font-size: 32px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.btn-area {
+  min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+body div.outline div#content.sub section.sub-admin div.container div.btn-area button {
+  height: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #000;
+  font-size: 22px;
+  padding: 0 20px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.btn-area button.main {
+  background: #0077A8;
+}
+body div.outline div#content.sub section.sub-admin div.container div.table-area {
+  height: 1260px;
+  background: #000000;
+  overflow-y: scroll;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write {
+  padding: 30px 0 0;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text] {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]::-moz-placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]:-ms-input-placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]::placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea {
+  width: 100%;
+  height: 580px;
+  padding: 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-moz-placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::placeholder {
+  color: #ccc;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area {
+  font-size: 0;
+  text-align: center;
+  padding: 30px 0 50px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
+  display: inline-block;
+  width: 49%;
+  font-size: 22px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button {
+  padding: 20px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 10px;
+  background: #888;
+  color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.sub,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.sub {
+  background: #36720E;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.main,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.main {
+  background: #0077A8;
+  padding: 25px 60px;
+  font-size: 24px;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left {
+  text-align: left;
+}
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
+  text-align: right;
+}
+body div.outline div#content.sub section.sub-admin div.container ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 0;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li {
+  display: inline-block;
+  padding: 1px;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li a {
+  display: block;
+  padding: 30px 0;
+  color: #fff;
+  background: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li a:hover, body div.outline div#content.sub section.sub-admin div.container ul li a.active {
+  background: #323232;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li a i {
+  display: block;
+  font-size: 60px;
+  margin: 0 0 20px;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li:first-child a {
+  border-radius: 0 0 0 36px;
+}
+body div.outline div#content.sub section.sub-admin div.container ul li:last-child a {
+  border-radius: 0 0 36px 0;
+}
+body div.outline div#content.sub section.sub-admin div.container ul.item4 li {
+  width: 25%;
+}
+body div.outline div#content.sub section.sub-admin div.container ul.item3 li {
+  width: 33.3333333333%;
+}
+body div.outline div#content.sub section.sub-admin.error div.container h2 {
+  color: #F1592A;
+}
+body div.outline div#content.sub section.sub-admin.error div.container h2::before {
+  display: none;
+}
+body div.outline footer#footer {
+  text-align: center;
+}
+body div.outline footer#footer div.container {
+  text-align: center;
+}
+body.main {
+  background: url(../images/background.jpg) no-repeat #000 center top/100% auto;
+}
+body.main div.outline {
+  background: rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=style.css.map */
