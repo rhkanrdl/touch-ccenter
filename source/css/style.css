@@ -709,35 +709,36 @@ body div.outline {
   /* header */
 }
 body div.outline header {
-  padding: 0 45px;
+  padding: 0;
 }
 body div.outline header .container {
   position: relative;
-  line-height: 117px;
-  margin-top: 30px;
-  padding: 0 60px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 127px;
+  height: 147px;
+  padding: 30px 0 0;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 60px 60px;
   box-shadow: 0 70px 70px 0 rgba(0, 0, 0, 0.6);
 }
 body div.outline header .container h1 {
-  margin: 0;
+  display: inline-block;
+  width: 100%;
+  margin: 20px 0 0 60px;
 }
 body div.outline header .container h1 a {
   display: inline-block;
-  color: #fff;
-  font-weight: 500;
+  color: #222;
+  font-weight: 900;
   font-size: 46px;
 }
 body div.outline header .container a.admin {
   display: block;
   position: absolute;
   right: 60px;
-  top: 40px;
-  width: 298px;
-  height: 42.2px;
+  top: 50px;
+  width: 265px;
+  height: 50px;
   font-size: 0;
-  background: url(../images/logo.svg) no-repeat center top/100% auto;
+  background: url(../images/logo.png) no-repeat center top/100% auto;
 }
 body div.outline div#content {
   display: inline-block;
@@ -803,18 +804,16 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
   font-weight: 600;
   font-size: 40px;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li.num a {
+body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(1) a, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(2) a {
   background: #519127;
-  border-radius: 30px 0 0 30px;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
+body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(1) a:active, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(2) a:active {
   background: #36720E;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
+body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(3) a, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(4) a {
   background: #277291;
-  border-radius: 0 30px 30px 0;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
+body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(3) a:active, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(4) a:active {
   background: #145570;
 }
 body div.outline div#content article.float-bar {

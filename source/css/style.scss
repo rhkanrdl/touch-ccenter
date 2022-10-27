@@ -74,7 +74,7 @@ body {
         
         /* header */
         header {
-            padding:0 45px;
+            padding:0;
 
             // @media (max-width: 768px) {
             //     padding:0 25px;
@@ -82,11 +82,10 @@ body {
 
             .container {
                 position:relative;
-                line-height:117px;
-                margin-top:30px;
-                padding:0 60px;
-                background:rgba(255,255,255,.2);
-                border-radius:127px;
+                height:147px;
+                padding:30px 0 0;
+                background:rgba(255,255,255,.9);
+                border-radius:0 0 60px 60px;
                 @include drop-shadow($x:0,$y: 70px, $blur: 70px, $spread: 0, $alpha: 0.6);
         
                 // @media (max-width: 768px) {
@@ -96,12 +95,14 @@ body {
 
 
                 h1 {
-                    margin:0;
+                    display:inline-block;
+                    width:100%;
+                    margin:20px 0 0 60px;
 
                     a {
                         display:inline-block;
-                        color:#fff;
-                        font-weight:500;
+                        color:#222;
+                        font-weight:900;
                         font-size:46px;
         
                         // @media (max-width: 768px) {
@@ -115,11 +116,11 @@ body {
                     display:block;
                     position:absolute;
                     right:60px;
-                    top:40px;
-                    width:298px;
-                    height:42.2px;
+                    top:50px;
+                    width:265px;
+                    height:50px;
                     font-size:0;
-                    background:url(../images/logo.svg) no-repeat center top / 100% auto;
+                    background:url(../images/logo.png) no-repeat center top / 100% auto;
         
                     // @media (max-width: 768px) {
                     //     top:40px;
@@ -251,10 +252,10 @@ body {
                                     
                                 }
 
-                                &.num {
+                                &:nth-child(1),
+                                &:nth-child(2) {
                                     a {
                                         background:#519127;
-                                        border-radius:30px 0 0 30px;
         
                                         // @media (max-width: 768px) {
                                         //     border-radius:20px 0 0 20px;
@@ -267,10 +268,10 @@ body {
                                     }
                                 }
 
-                                &.phone {
+                                &:nth-child(3),
+                                &:nth-child(4) {
                                     a {
                                         background:#277291;
-                                        border-radius:0 30px 30px 0;
         
                                         // @media (max-width: 768px) {
                                         //     border-radius:0 20px 20px 0;
