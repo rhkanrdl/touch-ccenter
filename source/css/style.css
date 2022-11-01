@@ -750,13 +750,45 @@ body div.outline div#content {
 body div.outline div#content.main h2 {
   display: none;
 }
+body div.outline div#content.main section.main-slider {
+  padding: 200px 0 120px;
+  margin: 0 0 100px;
+}
+body div.outline div#content.main section.main-slider div.swiper-slide {
+  display: inline-block;
+  vertical-align: top;
+  width: 352px;
+  height: 496.77px;
+  opacity: 0.5;
+}
+body div.outline div#content.main section.main-slider div.swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+body div.outline div#content.main section.main-slider div.swiper-slide.swiper-slide-active {
+  transform: scale(1.5) !important;
+  opacity: 1;
+  box-shadow: 0 70px 70px 0 rgba(0, 0, 0, 0.6);
+}
+body div.outline div#content.main section.main-slider div.swiper-pagination {
+  bottom: -80px;
+}
+body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet {
+  width: 23px;
+  height: 23px;
+  margin: 0 10px;
+  background: #A7A7A7;
+}
+body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #FCB034;
+}
 body div.outline div#content.main section.main-buttons div.container {
   text-align: center;
 }
 body div.outline div#content.main section.main-buttons div.container div.info-text {
-  margin: 460px 0 100px;
+  margin: 110px 0 100px;
   color: #fff;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 400;
   word-break: keep-all;
 }
@@ -783,7 +815,7 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
   font-size: 32px;
   text-align: center;
   color: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
   margin: 2px;
   height: 266px;
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
@@ -796,24 +828,24 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
 body div.outline div#content.main section.main-buttons div.container > ul li > a i {
   display: block;
   font-size: 100px;
-  margin: 0 0 10px;
+  margin: 0 0 4px;
   opacity: 0.5;
 }
 body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
   display: block;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 50px;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(1) a, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(2) a {
+body div.outline div#content.main section.main-buttons div.container > ul li.num a {
   background: #519127;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(1) a:active, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(2) a:active {
+body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
   background: #36720E;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(3) a, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(4) a {
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
   background: #277291;
 }
-body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(3) a:active, body div.outline div#content.main section.main-buttons div.container > ul li:nth-child(4) a:active {
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
   background: #145570;
 }
 body div.outline div#content article.float-bar {
